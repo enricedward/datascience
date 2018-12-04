@@ -61,7 +61,10 @@ export const fonts = () =>
 // Copy Logo
 //
 export const logos = () =>
-    src('node_modules/@oceanprotocol/art/logo/**/*').pipe(
+    src([
+        'node_modules/@oceanprotocol/art/logo/**/*',
+        'node_modules/@oceanprotocol/art/mantaray/**/*',
+    ]).pipe(
         dest(DIST + '/assets/img/')
     )
 
