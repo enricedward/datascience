@@ -63,10 +63,8 @@ export const fonts = () =>
 export const logos = () =>
     src([
         'node_modules/@oceanprotocol/art/logo/**/*',
-        'node_modules/@oceanprotocol/art/mantaray/**/*',
-    ]).pipe(
-        dest(DIST + '/assets/img/')
-    )
+        'node_modules/@oceanprotocol/art/mantaray/**/*'
+    ]).pipe(dest(DIST + '/assets/img/'))
 
 //
 // Copy Favicon
@@ -100,7 +98,7 @@ export const revReplace = () => {
 // Watch for file changes
 //
 export const watchSrc = () =>
-    watch([SRC, 'links.yml']).on('all', series(build, browser.reload))
+    watch([SRC, 'content.yml']).on('all', series(build, browser.reload))
 
 //
 // Dev Server

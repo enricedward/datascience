@@ -8,10 +8,9 @@
 [![Build Status](https://travis-ci.com/oceanprotocol/datascience.svg?token=3psqw6c8KMDqfdGQ2x6d&branch=master)](https://travis-ci.com/oceanprotocol/datascience)
 [![js oceanprotocol](https://img.shields.io/badge/js-oceanprotocol-7b1173.svg)](https://github.com/oceanprotocol/eslint-config-oceanprotocol)
 
-
 ---
 
-- [Link creation](#link-creation)
+- [Copy editing](#copy-editing)
     - [Editing workflow](#editing-workflow)
 - [Development](#development)
 - [Deployment](#deployment)
@@ -20,7 +19,7 @@
 
 ---
 
-## Link creation
+## Copy editing
 
 Create a new link by editing the [`content.yml`](content.yml) file. When editing on GitHub, click the pencil icon to start editing the file:
 
@@ -29,12 +28,17 @@ Create a new link by editing the [`content.yml`](content.yml) file. When editing
 Only thing to remember is to keep the indentation as in this example:
 
 ```yaml
-- name: Dutchchain Hackathon 2018
-  url: https://forms.google.com/fewfewhgvbzfbwbe
-
-- name: my other link
-  url: https://hello.com/fdasfrebvfbvgt
+links:
+    - name: JupyterHub Notebook
+      url: https://longurl.com
+    - name: Another JupyterHub Notebook
+      url: https://longurl.com
 ```
+
+This example would result in:
+
+<img width="700" alt="screen shot 2018-12-04 at 14 58 25" src="https://user-images.githubusercontent.com/90316/49446699-152a7980-f7d5-11e8-8945-959f2e05e90b.png">
+
 
 ### Editing workflow
 

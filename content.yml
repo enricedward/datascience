@@ -4,6 +4,8 @@ intro: Tools for data scientists to interact with the Ocean Protocol network.
 links:
     - name: JupyterHub Notebook
       url: https://longurl.com
+    - name: Another JupyterHub Notebook
+      url: https://longurl.com
 
 footer:
     - name: Homepage

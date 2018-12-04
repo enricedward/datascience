@@ -6,7 +6,8 @@ body {
 }
 
 main {
-    background: $brand-black url('/assets/img/mantaray-back.svg') no-repeat center top;
+    background: $brand-black url('/assets/img/mantaray-back.svg') no-repeat
+        center top;
     background-size: cover;
     min-height: 100vh;
     display: flex;
@@ -66,7 +67,7 @@ img {
     white-space: nowrap;
     margin-bottom: $spacer;
     max-width: 20rem;
-    background: rgba($brand-black, .8);
+    background: rgba($brand-black, 0.8);
 }
 
 footer {
