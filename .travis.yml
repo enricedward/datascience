@@ -1,0 +1,26 @@
+language: node_js
+node_js: node
+
+# will run `npm install` automatically here
+
+script:
+    - npm test
+    - npm run build
+
+before_deploy:
+    - pip install --user awscli
+    - export PATH=$PATH:$HOME/.local/bin
+
+deploy:
+    skip_cleanup: true
+    provider: script
+    script: npm run deploy
+    on:
+        branch: master
+
+notifications:
+    email: false
+
+cache:
+    directories:
+        - node_modules

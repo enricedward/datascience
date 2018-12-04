@@ -1,0 +1,12 @@
+{
+    "parser": "babel-eslint",
+    "extends": [
+        "oceanprotocol",
+        "plugin:prettier/recommended",
+        "prettier/standard"
+    ],
+    "plugins": ["prettier"],
+    "rules": {
+        "prettier/prettier": "error"
+    }
+}

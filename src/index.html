@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#141414">
+    <title>Voucher — Ocean Protocol</title>
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+
+    <meta name="robots" content="noindex,nofollow">
+</head>
+
+<body>
+    <main>
+        <article>
+            <img src="assets/img/logo-white.svg" />
+
+            <header>
+                <h1>{{ content.title }}</h1>
+                <p>{{ content.intro }}</p>
+            </header>
+
+            <div class="links">
+                {% for link in links %}
+                <a class="link" href="{{ link.url }}">{{ link.name }}</a>
+                {% endfor %}
+            </div>
+        </article>
+
+        <footer>
+            <div>
+                © <span id="year">{{ "now" | date: "%Y" }}</span> <a href="https://oceanprotocol.com">Ocean Protocol
+                    Foundation Ltd.</a> — All
+                Rights Reserved
+            </div>
+            <div>
+                {% for link in content.footer %}
+                <a href="{{ link.url }}">{{ link.name }}</a>
+                {% endfor %}
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        const yearText = document.getElementById('year')
+        const year = (new Date()).getFullYear()
+        yearText.innerHTML = year
+    </script>
+
+    <script>
+            (function (window) {
+                // Google Analytics async snippet
+                // http://goo.gl/3FPNDx
+                window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }
+                ga.l = +new Date
+                var d = document,
+                    g = d.createElement('script'),
+                    s = d.getElementsByTagName('script')[0]
+                g.async = true
+                g.src = 'https://www.google-analytics.com/analytics.js'
+                s.parentNode.insertBefore(g, s)
+
+                // Create the GA tracker
+                ga('create', 'UA-60614729-11', 'auto')
+
+                // IP Anonymization
+                ga('set', 'anonymizeIp', true)
+
+                // Send initial pageview
+                ga('send', 'pageview')
+            }(window))
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+@import 'fonts';
+@import 'global';
+
+body {
+    color: $brand-white;
+}
+
+main {
+    background: $brand-black;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 15%;
+
+    @media (min-width: $break-point--small) {
+        padding-top: 0;
+        align-items: center;
+        justify-content: center;
+        min-height: calc(100vh - #{$page-frame * 2});
+    }
+}
+
+article {
+    width: 100%;
+    padding: $spacer;
+    flex: 1;
+    text-align: center;
+}
+
+header {
+    max-width: 40rem;
+    margin: auto;
+}
+
+h1 {
+    margin-bottom: $spacer;
+    font-size: $font-size-h3;
+
+    @media (min-width: $break-point--small) {
+        font-size: $font-size-h1;
+    }
+}
+
+img {
+    width: 5rem;
+    height: 5rem;
+    display: block;
+    margin: auto;
+}
+
+.links {
+    margin-top: $spacer * 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.link {
+    display: inline-block;
+    padding: $spacer / 3 $spacer;
+    border: 1px solid $brand-pink;
+    border-radius: $border-radius;
+    margin: 0 $spacer / 2;
+    flex: 1;
+    white-space: nowrap;
+    margin-bottom: $spacer;
+    max-width: 20rem;
+}
+
+footer {
+    width: 100%;
+    font-size: $font-size-mini;
+    padding: $spacer;
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+
+    &,
+    a {
+        color: $brand-grey-light;
+    }
+
+    > div {
+        flex: 1 1 48%;
+
+        &:last-child {
+            text-align: right;
+
+            a {
+                display: inline-block;
+                margin-left: $spacer / 2;
+            }
+        }
+    }
+}
