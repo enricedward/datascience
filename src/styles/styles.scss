@@ -35,12 +35,29 @@ header {
 }
 
 h1 {
-    margin-bottom: $spacer;
+    margin-bottom: $spacer / 2;
     font-size: $font-size-h3;
 
     @media (min-width: $break-point--small) {
         font-size: $font-size-h1;
     }
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: $spacer;
+    font-size: $font-size-h5;
+
+    @media (min-width: $break-point--small) {
+        font-size: $font-size-h4;
+    }
+}
+
+p {
+    max-width: 40rem;
+    margin: auto;
+    text-align: left;
+    margin-bottom: $spacer / 2;
 }
 
 img {
@@ -51,7 +68,7 @@ img {
 }
 
 .links {
-    margin-top: $spacer * 2;
+    margin-top: $spacer;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
