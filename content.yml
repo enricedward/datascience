@@ -1,11 +1,9 @@
 title: Manta Ray
 tagline: Data Science powered by Ocean Protocol
-paragraph: > 
-    The **Manta Ray** notebooks provide a guided tour of Ocean Protocol in an interactive Jupyter Notebook environment.
-    Start using Ocean Protocol with your own pre-configured and loaded cloud instance after login with your GitHub account.
-    *This project is in alpha!*
-    Feel free to ask questions and post bug reports in our Gitter channel! https://gitter.im/oceanprotocol/Lobby
-    Notebooks are for tutorial and demonstration purpose only. Notebook instances may be periodically offline, and storage volumes will be purged.
+paragraph: >
+    The <strong>Manta Ray</strong> notebooks provide a guided tour of Ocean Protocol in an interactive Jupyter Notebook environment. Start using Ocean Protocol with your own pre-configured and loaded cloud instance after login with your GitHub account.<br /><br />
+
+    <strong>This project is in alpha!</strong> Feel free to ask questions and post bug reports in <a href="https://gitter.im/oceanprotocol/Lobby">our Gitter channel</a>. Notebooks are for tutorial and demonstration purpose only. Notebook instances may be periodically offline, and storage volumes will be purged.
 links:
     - name: JupyterLab Instance
       url: http://a1e6efedde7f611e8887b1225ec03c49-1029831930.us-east-1.elb.amazonaws.com

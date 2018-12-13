@@ -11,7 +11,7 @@
 ---
 
 - [Copy editing](#copy-editing)
-    - [Editing workflow](#editing-workflow)
+  - [Editing workflow](#editing-workflow)
 - [Development](#development)
 - [Deployment](#deployment)
 - [Authors](#authors)
