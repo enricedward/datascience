@@ -39,7 +39,6 @@ This example would result in:
 
 <img width="700" alt="screen shot 2018-12-04 at 14 58 25" src="https://user-images.githubusercontent.com/90316/49446699-152a7980-f7d5-11e8-8945-959f2e05e90b.png">
 
-
 ### Editing workflow
 
 The basic workflow goes like this:
